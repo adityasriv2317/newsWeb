@@ -1,24 +1,48 @@
 import React from 'react'
 
 const Header = (props) => {
+
+  let is = 0
+  let toggleMenu = () => {
+    let items = document.querySelector('.menuBar')
+
+    if(is == 0){
+      items.style.display='none'
+      is = 1
+    }
+    else{
+      items.style.display='block'
+      is = 0
+    }
+  }
+
   return (
-    <div className='header bg-blue-800 text-[2vw] flex text-white justify-between px-[2vw] h-[4vw] shadow-slate-500 font-poppins'>
+    <div className='header bg-black text-[2vw] max-md:text-[4vw] flex text-white justify-between px-[2vw] h-[5vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
 
         <div className="left flex items-center">
       
-          <div className="logo mr-[2vw] bg-yellow-500 flex items-center cursor-pointerz px-[0.8vw] h-full">
-            <img src={props.logo} alt="" className='h-[5vw] pt-[0.8vw] mr-[0.5vw]'/>
-            The Daily Bugle
+          <div className="logo mr-[2vw] bg-black-500 flex items-center cursor-pointerz px-[0.8vw] h-full">
+            <img src={props.logo} alt="" className='w-[5vw] max-md:w-[10vw] pt-[0.5vw] mr-[0.5vw]'/>
+            {props.name}
           </div>
-          <div className="acc text-[1.5vw] cursor-pointer bg-yellow-500 px-[0.7vw] flex items-center h-full">
+          <div className="acc text-[1.5vw] cursor-pointer hover:bg-red-500 px-[0.7vw] flex items-center h-full max-md:hidden">
             Account
           </div>
         </div>
       
-        <div className="right, text-[1.8vw] flex items-center">
+        <div className="right, text-[1.8vw] flex items-center max-md:hidden">
           <ul className='list-none gap-[2vw] m-auto flex h-full parent-div'>
-            <li className='cursor-pointer bg-yellow-500 px-[1vw] flex items-center'>Login</li>
-            <li className='cursor-pointer bg-yellow-500 px-[1vw] flex items-center'>SignUp</li>
+            <li className='cursor-pointer hover:bg-red-500 px-[1vw] flex items-center'>Login</li>
+            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</li>
+          </ul>
+        </div>
+
+        <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[2vw] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
+        <div className="menuBar max-md:hidden ">
+          <ul className='list-none gap-[2vw] m-auto flex:col parent-div absolute right-[0.5vw] top-[10.5vw] p-[2vh] bg-black'>
+            <li className='cursor-pointer hover:bg-red-500 px-[1vw] flex items-center'>Account</li>
+            <li className='cursor-pointer hover:bg-red-500 px-[1vw] flex items-center'>Login</li>
+            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</li>
           </ul>
         </div>
     
