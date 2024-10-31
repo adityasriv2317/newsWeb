@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = (props) => {
 
@@ -20,32 +21,32 @@ const Header = (props) => {
   }
 
   return (
-    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between py-[1.5em] px-[2vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
+    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between px-[2vw] shadow-slate-500 font-poppins'>
 
         <div className="left flex items-center">
       
-          <div className="logo mr-[2vw] bg-black-500 flex items-center cursor-pointerz px-[0.8vw] h-full cursor-pointer">
+          <Link to='/' className="logo mr-[2vw] bg-black-500 flex items-center cursor-pointerz px-[0.8vw] h-full cursor-pointer">
             <img src={props.logo} alt="" className='w-[5vw] max-md:w-[10vw] pt-[0.5vw] mr-[0.5vw]'/>
             {props.name}
-          </div>
-          <div className="acc text-[1.5vw] cursor-pointer hover:bg-red-700 px-[0.7vw] flex items-center h-full max-md:hidden">
+          </Link>
+          <Link to='/account' className="acc text-[1.5vw] cursor-pointer hover:bg-red-700 px-[0.7vw] flex items-center h-full max-md:hidden">
             Account
-          </div>
+          </Link>
         </div>
       
         <div className="right, text-[1.8vw] flex items-center max-md:hidden">
           <ul className='list-none gap-[2vw] m-auto flex h-full parent-div'>
-            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>Login</li>
-            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</li>
+            <Link to='/login' className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>Login</Link>
+            <Link to='/signup' className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</Link>
           </ul>
         </div>
 
-        <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[1em] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
+        <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[0.7em] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
         <div className="menuBar hidden">
           <ul className='list-none gap-[2vw] m-auto flex:col parent-div absolute right-[0.5vw] top-[10.5vw] p-[2vh] bg-black'>
-            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center mb-[50px]'>Account</li>
-            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>Login</li>
-            <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>SignUp</li>
+            <Link to='/account' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center mb-[50px]'>Account</Link>
+            <Link to='/login' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>Login</Link>
+            <Link to='/signup' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>SignUp</Link>
           </ul>
         </div>
     
