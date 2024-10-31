@@ -3,10 +3,10 @@ import React from 'react';
 const SignupComp = () => {
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 py-10">
-      <h1 className="text-3xl font-semibold text-black mb-6">Sign Up</h1>
+      <h1 className="text-[2em] font-semibold text-black mb-6">Sign Up</h1>
 
-      <div className="bg-white p-8 w-full max-w-md border border-gray-300">
-        <form className="space-y-4">
+      <div className="bg-white p-[4vw] w-full max-w-md border border-gray-300">
+        <form className="space-y-4 flex flex-col items-center">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
             <input type="text" name="name" id="name" className="mt-1 block w-full border border-gray-300 p-2 focus:outline " placeholder="Full Name" />
@@ -27,7 +27,7 @@ const SignupComp = () => {
             <input type="password" name="pass" id="pass" className="mt-1 block w-full border border-gray-300 p-2 focus:outline" placeholder="Password" />
           </div>
 
-          <button type="submit" className="w-full bg-black text-white font-semibold py-2 hover:bg-red-700 transition  duration-100">Sign Up</button>
+          <button type="submit" className="px-[2em] bg-black text-white font-semibold py-2 hover:bg-red-700">Sign Up</button>
         </form>
       </div>
     </div>
