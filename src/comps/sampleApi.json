@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "totalResults": 34,
+  "articles": [
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Sam Fossum, MJ Lee",
+      "title": "Biden seeks to clean up ‘garbage’ comment about Trump supporters denigrating Latinos - CNN",
+      "description": "President Joe Biden on Tuesday tried to clean up comments he made earlier that sparked immediate backlash from many who interpreted them as referring to supporters of former President Donald Trump as “garbage.”",
+      "url": "https://www.cnn.com/2024/10/29/politics/biden-trump-supporters-garbage/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/c-ap24302604252740.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2024-10-30T03:44:00Z",
+      "content": "President Joe Biden on Tuesday tried to clean up comments he made earlier that sparked immediate backlash from many who interpreted them as referring to supporters of former President Donald Trump as… [+5091 chars]"
+    },
+    {
+      "source": {
+        "id": "associated-press",
+        "name": "Associated Press"
+      },
+      "author": "WAFAA SHURAFA, SAMY MAGDY, BASSEM MROUE",
+      "title": "Israeli strikes in northern Gaza kill at least 88, officials say - The Associated Press",
+      "description": "Gaza's Health Ministry says two Israeli strikes in the northern Gaza Strip killed at least 88 people. The ministry said a five-story building was hit in one of the strikes Tuesday, killing at least 60 people, more than half of them women and children. Israel …",
+      "url": "https://apnews.com/article/israel-palestinians-hamas-war-lebanon-hezbollah-iran-news-10-29-2024-befe1b42ef25599539198fa04e089f04",
+      "urlToImage": "https://dims.apnews.com/dims4/default/a1de787/2147483647/strip/true/crop/8640x4860+0+450/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F47%2F5c%2F4a558a6133b90e894d0fb5b735ce%2F7fb83348671c43489be2d30ecd2f3f19",
+      "publishedAt": "2024-10-30T02:44:00Z",
+      "content": "DEIR AL-BALAH, Gaza Strip (AP) Two Israeli airstrikes in the northern Gaza Strip on Tuesday killed at least 88 people, including dozens of women and children, health officials said, and the director … [+7682 chars]"
+    },
+    {
+      "source": {
+        "id": "espn",
+        "name": "ESPN"
+      },
+      "author": null,
+      "title": "Two WS fans ejected for prying ball from Betts - ESPN",
+      "description": "A fan at Yankee Stadium was ejected from Game 4 of the World Series after prying a foul ball out of the glove of Los Angeles Dodgers right fielder Mookie Betts on Tuesday night.",
+      "url": "https://www.espn.com/mlb/story/_/id/42081449/yankee-stadium-fan-ejected-prying-ball-mookie-betts-glove",
+      "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F1030%2Fr1407845_1296x729_16%2D9.jpg",
+      "publishedAt": "2024-10-30T02:21:00Z",
+      "content": "Oct 29, 2024, 09:21 PM ET\r\nNEW YORK -- Two fans at Yankee Stadium were ejected from Game 4 of the World Series after one pried a foul ball out of the glove of Los Angeles Dodgers right fielder Mookie… [+1098 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Paul Pelosi attacker sentenced to life in prison in California trial - BBC.com",
+      "description": "David DePape is also serving a 30-year prison sentence after he was convicted on federal charges in May.",
+      "url": "https://www.bbc.com/news/articles/cje09qx348do",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/06b2/live/cfd40100-9637-11ef-8dc6-db6de7516f15.jpg",
+      "publishedAt": "2024-10-30T01:54:53Z",
+      "content": "The man who broke into the home of former Speaker Nancy Pelosi and attacked her husband with a hammer has been sentenced to life in prison without the possibility of parole on state charges in Califo… [+3071 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Fox Business"
+      },
+      "author": "Sarah Rumpf-Whitten",
+      "title": "Truth Social parent company Trump Media now worth more than Elon Musk’s X as Election Day nears - Fox Business",
+      "description": "Truth Social stock market valuation is now greater than the estimated value of Elon Musk’s X as the the former president's social media network soars ahead of Election Day.",
+      "url": "https://www.foxbusiness.com/technology/truth-social-parent-company-trump-media-worth-more-elon-musks-x-election-day-nears",
+      "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2024/08/0/0/Elon-Musk-Donald-Trump-split-1.jpg?ve=1&tl=1",
+      "publishedAt": "2024-10-30T01:25:00Z",
+      "content": "Trump Media &amp; Technology Group, which operates the social media network Truth Social, now trumps the estimated value of Elon Musk's X as Election Day looms.\r\nTrump Media &amp; Technology Group (T… [+2629 chars]"
+    },
+    {
+      "source": {
+        "id": "the-verge",
+        "name": "The Verge"
+      },
+      "author": "Sean Hollister",
+      "title": "AMD confirms its next-gen RDNA 4 GPUs will launch in early 2025 - The Verge",
+      "description": "“We are on track to launch the first RDNA4 GPUs in early 2025,” said AMD CEO Lisa Su. It’s the first public confirmation of its next-gen Radeon timeline.",
+      "url": "https://www.theverge.com/2024/10/29/24283263/amd-radeon-rdna-4-gpus-2025",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/ebc-FtakQAs_S6u0Df4L3r01ZhQ=/0x0:2378x1625/1200x628/filters:focal(1240x784:1241x785)/cdn.vox-cdn.com/uploads/chorus_asset/file/25705859/radeon_amd.jpg",
+      "publishedAt": "2024-10-30T01:03:00Z",
+      "content": "AMD confirms its next-gen RDNA 4 GPUs will launch in early 2025\r\nAMD confirms its next-gen RDNA 4 GPUs will launch in early 2025\r\n / Will we see them at CES?\r\nBySean Hollister, a senior editor and fo… [+1686 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNBC"
+      },
+      "author": "Yeo Boon Ping",
+      "title": "CNBC Daily Open: Everyone loves Reddit - CNBC",
+      "description": "Our social media habits are so ingrained they're almost automatic and essential. Little surprise, then, that the companies behind them are flourishing.",
+      "url": "https://www.cnbc.com/2024/10/30/cnbc-daily-open-everyone-loves-reddit.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108054583-1730249846754-gettyimages-2023785321-porzycki-redditip240222_np5qf.jpeg?v=1730249875&w=1920&h=1080",
+      "publishedAt": "2024-10-30T01:02:00Z",
+      "content": "This report is from today's CNBC Daily Open, our international markets newsletter. CNBC Daily Open brings investors up to speed on everything they need to know, no matter where they are. Like what yo… [+3991 chars]"
+    }
+  ]
+}
