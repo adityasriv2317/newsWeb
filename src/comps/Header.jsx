@@ -20,7 +20,7 @@ const Header = (props) => {
   }
 
   return (
-    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between px-[2vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
+    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between py-[1.5em] px-[2vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
 
         <div className="left flex items-center">
       
@@ -40,7 +40,7 @@ const Header = (props) => {
           </ul>
         </div>
 
-        <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[2vw] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
+        <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[1em] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
         <div className="menuBar hidden">
           <ul className='list-none gap-[2vw] m-auto flex:col parent-div absolute right-[0.5vw] top-[10.5vw] p-[2vh] bg-black'>
             <li className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center mb-[50px]'>Account</li>
