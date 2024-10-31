@@ -20,7 +20,7 @@ const Header = (props) => {
   }
 
   return (
-    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[4vw] flex text-white justify-between px-[2vw] h-[5vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
+    <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between px-[2vw] max-md:h-[10vw] shadow-slate-500 font-poppins'>
 
         <div className="left flex items-center">
       
