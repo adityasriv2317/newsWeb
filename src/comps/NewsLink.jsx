@@ -1,8 +1,9 @@
 import React from 'react'
 import thumbnail from '/tdb2.png'
 
-const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
+// const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
 const url2 = 'https://jsonplaceholder.typicode.com/users'
+const url3 = '/SampleApi.json'
 
 class NewsLink extends React.Component{
   constructor(){
@@ -16,15 +17,8 @@ class NewsLink extends React.Component{
 
   async componentDidMount(){
 
-    // fetch(url).then((res) => res.json()).then((json) => {
-    //   this.setState({
-    //     newsData: json,
-    //     loaded: true,
-    //   })
-    // })
-
     // fetch output from api into a variable
-    let output = await fetch(url)
+    let output = await fetch(url3)
     let op = await output.json()
 
     // set state throughout
@@ -34,13 +28,6 @@ class NewsLink extends React.Component{
       loaded: true,
     })
 
-    // console.log(this.newsData)
-    // console.log(this.loaded);
-    
-    // console.log(result)
-    // newsData.map((item) =>{
-    //   title = item.title
-    // })
   }
 
   render(){
@@ -67,7 +54,7 @@ class NewsLink extends React.Component{
               {/* SAMPLE NEWS contains image title and readmore button */}
 
               // return function gives jsx to render
-              return <div className='newsLink bg-red-200 mb-[2vw] flex flex-col h-[14vw]'>
+              return <div className='newsLink bg-red-200 mb-[2vw] flex flex-col h-[14vw] relative'>
                 <img src={item.urlToImage?item.urlToImage:thumbnail} alt='IMAGE' className='w-[22vw] h-[14vw] absolute' />
 
                 <div className="data flex-grow">
@@ -75,7 +62,7 @@ class NewsLink extends React.Component{
                   <h1 className='ml-[23vw] text-[2vw] text-wrap font-normal'>{item.description?item.description.slice(0, 220) + '...':'[Removed]'}</h1>
                 </div>
 
-                <a className='btn ml-[23vw] text-[1.3vw] mb-[2vw] text-center mr-[2vh] min-w-[10vw] self-end bg-black hover:bg-red-700 text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
+                <a className='btn ml-[23vw] text-[1.3vw] absolute bottom-0 mb-[2vw] text-center mr-[2vh] min-w-[10vw] self-end bg-black hover:bg-red-700 text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
               </div>         
             })
           }
