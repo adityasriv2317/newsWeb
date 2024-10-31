@@ -20,6 +20,14 @@ const Header = (props) => {
     }
   }
 
+  // document.addEventListener('click' ()=>{
+  //   if(is == 0){
+  //     items.style.display='none'
+  //     button.style.color='white'
+  //     is = 1
+  //   }
+  // })
+
   return (
     <div className='header relative z-10 bg-black text-[2vw] max-md:text-[1.3em] flex text-white justify-between px-[2vw] shadow-slate-500 font-poppins'>
 
@@ -36,17 +44,17 @@ const Header = (props) => {
       
         <div className="right, text-[1.8vw] flex items-center max-md:hidden">
           <ul className='list-none gap-[2vw] m-auto flex h-full parent-div'>
-            <Link to='/login' className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>Login</Link>
-            <Link to='/signup' className='cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</Link>
+            <Link to='/login' className='links cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>Login</Link>
+            <Link to='/signup' className='links cursor-pointer hover:bg-red-700 px-[1vw] flex items-center'>SignUp</Link>
           </ul>
         </div>
 
         <div className="menu text-[4vw] max-md:flex hidden absolute right-[4vw] top-[0.7em] items-center cursor-pointer" onClick={toggleMenu}>&#9776;</div>
         <div className="menuBar hidden">
           <ul className='list-none gap-[2vw] m-auto flex:col parent-div absolute right-[0.5vw] top-[10.5vw] p-[2vh] bg-black'>
-            <Link to='/account' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center mb-[50px]'>Account</Link>
-            <Link to='/login' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>Login</Link>
-            <Link to='/signup' className='cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>SignUp</Link>
+            <Link to='/account' className='links cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center mb-[50px]'>Account</Link>
+            <Link to='/login' className='links cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>Login</Link>
+            <Link to='/signup' className='links cursor-pointer hover:bg-red-700 px-[1vw] flex justify-center items-center'>SignUp</Link>
           </ul>
         </div>
     
