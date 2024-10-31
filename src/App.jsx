@@ -9,9 +9,12 @@ function App() {
   return (
     <>
       <div className='m-0 p-0 font-roboto'>
+
+        {/* header - navigation bar */}
         <Header logo={logo} name={name}/>
 
-        <PageBody />
+        {/* page body with embedded news */}
+        <PageBody img={logo}/>
       </div>
     </>
   )
