@@ -49,7 +49,7 @@ class NewsLink extends React.Component{
 
               // return function gives jsx to render
               return (
-                <div>
+                <div className='cursor-default'>
 
                   {/* desktop devices */}
                   <div className='newsLink max-md:hidden transition transition-ease hover:bg-red-300 bg-red-200 mb-[2vw] flex flex-col h-[14vw] relative'>
@@ -64,7 +64,7 @@ class NewsLink extends React.Component{
                   </div>  
 
                    {/*mobile devices */}
-                   <div className='newsLink max-md:block transition transition-ease hover:bg-red-300 pb-[2vh] bg-red-200 mb-[2vw] flex flex-col relative p-[1.5vw]'>
+                   <div className='newsLink max-md:flex hidden transition transition-ease hover:bg-red-300 pb-[2vh] bg-red-200 mb-[2vw] flex-col relative p-[1.5vw]'>
                     <img src={item.urlToImage?item.urlToImage:thumbnail} alt='IMAGE' className='w-full h-[30vh]' />
 
                     <div className="data py-1 flex-grow">
@@ -72,7 +72,7 @@ class NewsLink extends React.Component{
                       <h1 className='text-[1em] mb-[2vh] text-wrap font-normal'>{item.description?item.description.slice(0, 220) + '...':'[Removed]'}</h1>
                     </div>
 
-                    <a className='btn text-[1em] top-[10vw] min-w-[10vw] bg-black hover:bg-red-700 text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
+                    <a className='btn text-[1em] top-[10vw] min-w-[10vw] bg-black hover:bg-red-700 text-center text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
                   </div>
 
                 </div>

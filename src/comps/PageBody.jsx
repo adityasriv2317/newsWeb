@@ -7,7 +7,7 @@ const PageBody = () => {
 
   return (
     <div className='newsBody mx-[2vw] py-[2vw]'>
-        <h1 className='font-semibold text-[2.5vw]'>Read Trending News</h1>
+        <h1 className='font-semibold text-[2.5em] max-md:text-[2em]'>Read Trending News</h1>
 
         <div className="newsBox mt-[2vw] py-[2vw] border-solid border-black border">
           <NewsLink img={src} heading={'HEADING'} news={"NEWS"}/>
