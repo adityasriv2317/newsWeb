@@ -62,7 +62,7 @@ class NewsLink extends React.Component{
                   <h1 className='ml-[23vw] text-[2vw] text-wrap font-normal'>{item.description?item.description.slice(0, 220) + '...':'[Removed]'}</h1>
                 </div>
 
-                <a className='btn ml-[23vw] text-[1.3vw] absolute bottom-0 mb-[2vw] text-center mr-[2vh] min-w-[10vw] self-end bg-black hover:bg-red-700 text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
+                <a className='btn ml-[23vw] text-[1.3vw] absolute top-[10vw] mb-[2vw] text-center mr-[2vh] min-w-[10vw] self-end bg-black hover:bg-red-700 text-white p-[0.5em]' href={item.url} target='_blank'>READ MORE</a>     
               </div>         
             })
           }
