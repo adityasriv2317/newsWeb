@@ -17,8 +17,13 @@ class NewsLink extends React.Component{
   async componentDidMount(){
 
     // fetch output from api into a variable
-    let output = await fetch(url)
+    let output = await fetch(url, {
+      method: 'GET',
+    })
     let op = await output.json()
+
+    console.log(op);
+    
 
     // set state throughout
     this.setState({
