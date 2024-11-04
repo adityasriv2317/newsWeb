@@ -1,8 +1,8 @@
 import React from 'react'
 import thumbnail from '/tdb2.png'
 
-// const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
-const url3 = '/SampleApi.json'
+const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
+// const url3 = '/SampleApi.json'
 
 class NewsLink extends React.Component{
   constructor(){
@@ -17,7 +17,7 @@ class NewsLink extends React.Component{
   async componentDidMount(){
 
     // fetch output from api into a variable
-    let output = await fetch(url3)
+    let output = await fetch(url)
     let op = await output.json()
 
     // set state throughout

@@ -9,9 +9,9 @@ const User = () => {
 
   const [uname, setName] = useState('')
   const [umail, setMail] = useState('')
+  const [prompt, setPrompt] = useState('')
 
   console.log(currentUser);
-  
   
   useEffect(() => {
 
@@ -40,14 +40,21 @@ const User = () => {
     
   }, [currentUser])
 
-  let logOut = () =>  {
-    fetch(logoutUrl, {
+  let logOut = async (e) =>  {
+
+    e.preventDefault()
+
+    await fetch(logoutUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': currentUser,
       }
     })
+    
+    setMail('')
+    setName('')
+    setPrompt('Logged out successfully.')
   }
 
   return (
@@ -55,18 +62,19 @@ const User = () => {
       <h1 className="text-[2em] font-semibold text-black mb-6">Account</h1>
 
       <div className="bg-white p-[4vw] w-full max-w-md border border-gray-300">
-        <form className="space-y-4 flex flex-col items-center">
+        <form className="space-y-8 text-xl flex flex-col items-center">
+          <p className='text-red-600'>{prompt}</p>
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label><br />
+            <label htmlFor="name" className="block text-center font-medium text-gray-700">Name:</label>
             <p>{uname ? uname : ''}</p>
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email:</label><br />
+            <label htmlFor="email" className="block text-center font-medium text-gray-700">Email:</label>
             <p>{umail ? umail : ''}</p>
           </div>
 
-          <button type="submit" onClick={logOut} className="px-[2em] bg-black text-white font-semibold py-2 hover:bg-red-700" >Log Out</button>
+          <button type="submit" onClick={logOut} className="px-[2em] mt-[200px] bg-black text-white font-semibold py-2 hover:bg-red-700" >Log Out</button>
         </form>
       </div>
     </div>
