@@ -1,7 +1,7 @@
 import React from 'react'
 import thumbnail from '/tdb2.png'
 
-const url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
+const url = "https://newsapi.org/v2/everything?q=the&sortBy=publishedAt&pageSize=50&language=en&apiKey=2ebb187b1dfb4051861d2660ccdf3b12"
 const url3 = '/SampleApi.json'
 
 class NewsLink extends React.Component{
