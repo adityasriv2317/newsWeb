@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
 import NewsLink from './NewsLink'
 
 let src = 'https://wallpapers.com/images/featured/spiderman-pictures-8opf8q4smmpx644d.jpg'
